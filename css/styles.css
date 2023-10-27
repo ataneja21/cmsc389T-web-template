@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Optima;
-  background-color: #FCF7FF;
+  font-family: 'Playfair Display', serif;
+  background-color: linear-gradient(#edf2fb,#e2eafc,#d7e3fc,#ccdbfd,#c1d3fe,#b6ccfe,#abc4ff);
 }
 
 .center {
@@ -110,8 +110,21 @@ html {
 }
 
 h1 {
+  color: #344152;
   font-size: 60px;
   margin: 0;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+  from {
+   color: #344152;
+  }
+
+  to {
+    color: white;
+  }
 }
 
 #image {

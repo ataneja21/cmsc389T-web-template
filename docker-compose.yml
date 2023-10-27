@@ -9,7 +9,7 @@ services:
   #the nginx configuration is given below
   #the website will run on localhost:80 
   webserver:
-    image: nginx:mainline-alpine
+    image: node:10-alpine
     container_name: webserver
     restart: unless-stopped
     ports:
