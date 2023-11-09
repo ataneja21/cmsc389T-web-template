@@ -1,0 +1,116 @@
+/* Style sheet for Scholars ePortfolio web page */
+/* General instructions for font, color, and background image */
+body {
+    font-family: 'Playfair Display', serif;
+    color: #344152;
+    margin: 50px;
+    background: linear-gradient(#edf2fb,#e2eafc,#d7e3fc,#ccdbfd,#c1d3fe,#b6ccfe,#abc4ff);
+}
+
+/* General selector values */
+
+/* Paragraph break height */
+p {
+    line-height: 1.4em;
+    color: #344152;
+    font-size: 1.2em;
+}
+
+
+/* Heading fonts and formats */
+h2 {
+    color: #344152;
+    font-size: 3.2em;
+    margin: 0;
+    padding: 0.1em;
+    padding-left: 1em;
+    text-align: center;
+    font-weight: plain;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+     from {
+      color: #344152;
+  }
+  
+  to {
+     color: white;
+  }
+}
+h6 {
+    font-family: 'Playfair Display', serif;
+    color: #344152;
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0.1em;
+    padding-left: 1em;
+    text-align: center;
+    font-weight: plain;
+}
+/* Colors for linked text, before and after being clicked */
+a {
+    text-decoration: none;
+}
+.link{
+  color: #104E8B;
+}
+/* a:link {
+    color: #7400b8;
+}
+
+a:visited {
+    color: #104E8B;
+} */
+
+/* Page Layout */
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Layout for divisions containing images and their captions */
+.image{
+  border: 3px solid #104E8B;
+}
+.imageCaption{
+  font-size: 20px;
+}
+#picture {
+    padding: 1px;
+    float: right;
+    text-align: center;
+    font-size: 8pt;
+    margin: 0 0 1em 1em;
+}
+/* Layout for divisions containing content */
+#content {
+    padding: 10px;
+    float: right;
+    text-align: left;
+    font-size: 12pt;
+    margin: 0 0 1em 1em;
+}
+
+/* Margins and alignment for images in the content division */
+#content img {
+    padding: 1px;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+/* Layout for alignment of footer */
+
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#footer img {
+    padding: 10px;
+}
