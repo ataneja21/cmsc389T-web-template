@@ -3,13 +3,19 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-web-app
+    container_name: node-web-app
+    restart: unless-stopped
     networks:
       - app-network
   
   #the nginx configuration is given below
   #the website will run on localhost:80 
   webserver:
-    image: node:10-alpine
+    image: nginx:mainline-alpine
     container_name: webserver
     restart: unless-stopped
     ports:
